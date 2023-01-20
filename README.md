@@ -4,4 +4,5 @@ Comment for the Github assignment
 
 Comment from Github
 
-Conflict
+
+Conflicting line
