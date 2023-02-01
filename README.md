@@ -11,3 +11,8 @@ Key Features:
 - Ability to play with another user
 - Ability to play with a computer
 - Your number of wins is displayed persistently on the scoreboard
+
+
+IP address of server - http://3.139.97.193/
+
+*Make sure to release Elastic IP when finished with this project
