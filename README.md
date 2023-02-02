@@ -14,6 +14,7 @@ Key Features:
 
 
 IP address of server - http://3.13.33.59/
+
 Domain name - http://chessonline.click
 
 *Make sure to release Elastic IP when finished with this project
