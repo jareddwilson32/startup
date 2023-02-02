@@ -13,6 +13,7 @@ Key Features:
 - Your number of wins is displayed persistently on the scoreboard
 
 
-IP address of server - http://3.139.97.193/
+IP address of server - http://3.13.33.59/
+Domain name - http://chessonline.click
 
 *Make sure to release Elastic IP when finished with this project
