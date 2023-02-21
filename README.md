@@ -18,3 +18,7 @@ IP address of server - http://3.13.33.59/
 Domain name - http://chessonline.click
 
 *Make sure to release Elastic IP when finished with this project
+
+Simon HTML Assignment:
+- Organize file with Head and Body tags, organize Body section into a Header, Main, and Footer.
+- Leave comments where I'm going to need to add features later.
