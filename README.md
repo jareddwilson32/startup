@@ -22,3 +22,7 @@ Domain name - http://chessonline.click
 Simon HTML Assignment:
 - Organize file with Head and Body tags, organize Body section into a Header, Main, and Footer.
 - Leave comments where I'm going to need to add features later.
+
+Simon CSS Assignment:
+- Need to look more into the main, basic bootstrap classes becuase it seems to be way easier to use them than creating my own from scratch.
+- Using bootstrap css classes as a foundation and then overriding them to customize further seems to be effective.
