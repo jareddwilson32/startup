@@ -26,3 +26,7 @@ Simon HTML Assignment:
 Simon CSS Assignment:
 - Need to look more into the main, basic bootstrap classes becuase it seems to be way easier to use them than creating my own from scratch.
 - Using bootstrap css classes as a foundation and then overriding them to customize further seems to be effective.
+
+Simon JS Assignment:
+- Need to figure out way to model functionality using JavaScript for chess, seems like it'll be a lot more complicated than using css and javascript like in the Simon example.
+- Use id's and classes to specify exactly what to select for different functions.
