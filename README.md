@@ -31,5 +31,11 @@ Simon JS Assignment:
 - Need to figure out way to model functionality using JavaScript for chess, seems like it'll be a lot more complicated than using css and javascript like in the Simon example.
 - Use id's and classes to specify exactly what to select for different functions.
 
+Other Notes:
+- JSON uses double quotes
+- JS objects use colons (Ex: {n:1})
+- "chmod +x deploy.sh" makes a script executable
+- Use CNAME to point to another DNS record
+
 ![image](https://user-images.githubusercontent.com/90023992/224163440-894bb48a-eba5-4e87-ab97-c55f6724fe8d.png)
 
