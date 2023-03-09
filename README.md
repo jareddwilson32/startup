@@ -30,3 +30,6 @@ Simon CSS Assignment:
 Simon JS Assignment:
 - Need to figure out way to model functionality using JavaScript for chess, seems like it'll be a lot more complicated than using css and javascript like in the Simon example.
 - Use id's and classes to specify exactly what to select for different functions.
+
+![image](https://user-images.githubusercontent.com/90023992/224163440-894bb48a-eba5-4e87-ab97-c55f6724fe8d.png)
+
