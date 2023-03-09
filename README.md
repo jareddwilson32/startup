@@ -36,6 +36,49 @@ Other Notes:
 - JS objects use colons (Ex: {n:1})
 - "chmod +x deploy.sh" makes a script executable
 - Use CNAME to point to another DNS record
+- Importing fonts:
+  - @font-face {
+    font-family: 'Quicksand';
+    src: url('https://cs260.click/fonts/quicksand.woff2');
+  }
+  - @import url('https://fonts.googleapis.com/css2?family=Rubik Microbe&display=swap');
+- DOM:
+  -   function insertChild(parentSelector, text) {
+        const newChild = document.createElement('div');
+        newChild.textContent = text;
+
+        const parentElement = document.querySelector(parentSelector);
+        parentElement.appendChild(newChild);
+      }
+
+      insertChild('#courses', 'new course');
+    - const el = document.querySelector('div');
+      el.innerHTML = '<div class="injected"><b>Hello</b>!</div>';
+    - const submitDataEl = document.querySelector('#submitData');
+      submitDataEl.addEventListener('click', function (event) {
+        console.log(event.type);
+      });
+  - Promises:
+    - const coinToss = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (Math.random() > 0.1) {
+          resolve(Math.random() > 0.5 ? 'heads' : 'tails');
+        } else {
+          reject('fell off table');
+        }
+      }, 10000);
+    });
+    We then chain the then, catch and finally functions to the coinToss object in order to handle each of the possible results.
+
+    coinToss
+      .then((result) => console.log(`Coin toss result: ${result}`))
+      .catch((err) => console.log(`Error: ${err}`))
+      .finally(() => console.log('Toss completed'));
+
+    // OUTPUT:
+    //    Coin toss result: tails
+    //    Toss completed
 
 ![image](https://user-images.githubusercontent.com/90023992/224163440-894bb48a-eba5-4e87-ab97-c55f6724fe8d.png)
+![image](https://user-images.githubusercontent.com/90023992/224166416-c980162b-5873-4ff6-9e78-a8efabf06023.png)
 
