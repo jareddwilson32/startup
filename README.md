@@ -78,6 +78,23 @@ Other Notes:
     // OUTPUT:
     //    Coin toss result: tails
     //    Toss completed
+    
+  - Fetch:
+      fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+          title: 'test title',
+          body: 'test body',
+          userId: 1,
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      })
+        .then((response) => response.json())
+        .then((jsonResponse) => {
+          console.log(jsonResponse);
+        });
 
 ![image](https://user-images.githubusercontent.com/90023992/224163440-894bb48a-eba5-4e87-ab97-c55f6724fe8d.png)
 ![image](https://user-images.githubusercontent.com/90023992/224166416-c980162b-5873-4ff6-9e78-a8efabf06023.png)
