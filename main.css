@@ -40,9 +40,17 @@ menu {
   footer a {
     float: right;
   }
-  
-  #count {
-    color: rgb(246, 239, 158);
+
+  .bg-dark {
+    background-color: #2b2b54!important;
+  }
+
+  .bg-secondary {
+    background-color: #8ca4b6!important;
+  }
+
+  .text-dark {
+    color: #2b2b54!important;
   }
   
   .players {
