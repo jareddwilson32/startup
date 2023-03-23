@@ -31,6 +31,12 @@ Simon JS Assignment:
 - Need to figure out way to model functionality using JavaScript for chess, seems like it'll be a lot more complicated than using css and javascript like in the Simon example.
 - Use id's and classes to specify exactly what to select for different functions.
 
+Simon Service Assignment:
+- Need to use .gitignore file when working with node to make sure the large node_modules directory doesn't get uploaded by git.
+- npm init -y
+- npm install express
+- using an index.js file will be an entry point that node.js will call when we use our web service.
+
 Other Notes:
 - JSON uses double quotes
 - JS objects use colons (Ex: {n:1})
@@ -99,5 +105,6 @@ Other Notes:
 ![image](https://user-images.githubusercontent.com/90023992/224163440-894bb48a-eba5-4e87-ab97-c55f6724fe8d.png)
 ![image](https://user-images.githubusercontent.com/90023992/224166416-c980162b-5873-4ff6-9e78-a8efabf06023.png)
 ![image](https://user-images.githubusercontent.com/90023992/225480008-78f26ed3-c42e-44a6-91f9-40651a2e99ab.png)
+![image](https://user-images.githubusercontent.com/90023992/227111087-d8c9177c-9584-4344-9b7a-9394796f3efb.png)
 
 
