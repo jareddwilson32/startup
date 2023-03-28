@@ -37,6 +37,12 @@ Simon Service Assignment:
 - npm install express
 - using an index.js file will be an entry point that node.js will call when we use our web service.
 
+Simon DB Assignment:
+- Not good practice to store full connection urls within the actual code, better to make as environment variables or some other way to hide the actual credentials.
+- MongoDB is really good at working with JavaScript because of the way its document-based database structure is set up (same as JS objects).
+- npm install mongodb
+- const {MongoClient} = require('mongodb');
+
 Other Notes:
 - JSON uses double quotes
 - JS objects use colons (Ex: {n:1})
