@@ -43,6 +43,11 @@ Simon DB Assignment:
 - npm install mongodb
 - const {MongoClient} = require('mongodb');
 
+Simon Login Assignment:
+- Use a mix of node and mongodb to create api service endpoints.
+- These service endpoints utilize http syntax.
+- User authentication uses the api calls to validate login information against the database, then stores a token in a cookie so the user has more ease of access.
+
 Other Notes:
 - JSON uses double quotes
 - JS objects use colons (Ex: {n:1})
