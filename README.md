@@ -48,6 +48,12 @@ Simon Login Assignment:
 - These service endpoints utilize http syntax.
 - User authentication uses the api calls to validate login information against the database, then stores a token in a cookie so the user has more ease of access.
 
+Simon WebSocket Assignment:
+- WebSocket is a way to connect two clients together to consistently share data instead of waiting on server replies
+- const { WebSocketServer } = require('ws');
+- const wss = new WebSocketServer({ noServer: true });
+
+
 Other Notes:
 - JSON uses double quotes
 - JS objects use colons (Ex: {n:1})
