@@ -19,6 +19,22 @@ Domain name - http://chessonline.click
 
 *Make sure to release Elastic IP when finished with this project
 
+Startup HTML:
+- The point of HTML is structure.
+- HTML by itself isn't very attractive, needs CSS to look readable and nice, needs JavaScript to be interactive, needs Services to be actually useful.
+- Use HTML as a skeleton for the website/application, make sure it's divided into appropriate sections.
+
+Startup CSS:
+- ID's vs Classes: ID's are for small scale styling, while classes are for many elements that use the same styling.
+- It is possible to override Bootstrap CSS classes, but not recommended.
+- Main goal is making elements readable (using proper coloring and whitespace).
+- Design has a lot to do with using CSS, you can figure out fairly simply how to get things to look a certain way, but you first have to know what you want it to look like.
+
+Startup JavaScript:
+- There's a big difference between bare JavaScript and using something like node.js.
+- Need an entry point for using node.js
+- HTML elements can call JavaScript functions, and can use event listeners to trigger them based on a user's actions.
+
 Simon HTML Assignment:
 - Organize file with Head and Body tags, organize Body section into a Header, Main, and Footer.
 - Leave comments where I'm going to need to add features later.
