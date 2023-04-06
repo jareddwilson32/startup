@@ -72,6 +72,10 @@ Simon WebSocket Assignment:
 Simon React Assignment:
 - React uses components
 - React components use state, props, and render, to update components when data changes
+- npx create-react-app "project_name" to initialize a simple base react foundation
+- "npm start" while in the project directory to run the program
+- npm run build
+  - Builds a deployable version of your react project (saves it to a "build" directory)
 
 
 Other Notes:
