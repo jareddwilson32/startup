@@ -76,6 +76,9 @@ Simon React Assignment:
 - "npm start" while in the project directory to run the program
 - npm run build
   - Builds a deployable version of your react project (saves it to a "build" directory)
+- React Router
+  - Contains routes/links to other "pages"
+  - These pages aren't separate html files, rather they are react components modifying the root DOM
 
 
 Other Notes:
