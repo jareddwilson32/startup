@@ -69,6 +69,10 @@ Simon WebSocket Assignment:
 - const { WebSocketServer } = require('ws');
 - const wss = new WebSocketServer({ noServer: true });
 
+Simon React Assignment:
+- React uses components
+- React components use state, props, and render, to update components when data changes
+
 
 Other Notes:
 - JSON uses double quotes
