@@ -50,9 +50,7 @@ apiRouter.post('/auth/login', async (req, res) => {
             return;
         }
     }
-    else {
-        res.status(401).send({ msg: 'Unauthorized' });
-    }
+    res.status(401).send({ msg: 'Unauthorized' });
 });
 
 // GetUser
@@ -63,9 +61,7 @@ apiRouter.get('/user/:username', async (req, res) => {
         res.send({ username: user.username, authenticated: token === user.token });
         return
     }
-    else {
-        res.status(404).send({ msg: 'Unknown User'});
-    }
+    res.status(404).send({ msg: 'Unknown User'});
 });
 
 // secureApiRouter verifies credentials for endpoints
@@ -77,7 +73,8 @@ secureApiRouter.use(async (req, res, next) => {
   const user = await DB.getUserByToken(authToken);
   if (user) {
     next();
-  } else {
+  } 
+  else {
     res.status(401).send({ msg: 'Unauthorized' });
   }
 });
