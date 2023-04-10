@@ -19,6 +19,22 @@ Domain name - http://chessonline.click
 
 *Make sure to release Elastic IP when finished with this project
 
+Startup HTML:
+- The point of HTML is structure.
+- HTML by itself isn't very attractive, needs CSS to look readable and nice, needs JavaScript to be interactive, needs Services to be actually useful.
+- Use HTML as a skeleton for the website/application, make sure it's divided into appropriate sections.
+
+Startup CSS:
+- ID's vs Classes: ID's are for small scale styling, while classes are for many elements that use the same styling.
+- It is possible to override Bootstrap CSS classes, but not recommended.
+- Main goal is making elements readable (using proper coloring and whitespace).
+- Design has a lot to do with using CSS, you can figure out fairly simply how to get things to look a certain way, but you first have to know what you want it to look like.
+
+Startup JavaScript:
+- There's a big difference between bare JavaScript and using something like node.js.
+- Need an entry point for using node.js
+- HTML elements can call JavaScript functions, and can use event listeners to trigger them based on a user's actions.
+
 Simon HTML Assignment:
 - Organize file with Head and Body tags, organize Body section into a Header, Main, and Footer.
 - Leave comments where I'm going to need to add features later.
@@ -30,6 +46,40 @@ Simon CSS Assignment:
 Simon JS Assignment:
 - Need to figure out way to model functionality using JavaScript for chess, seems like it'll be a lot more complicated than using css and javascript like in the Simon example.
 - Use id's and classes to specify exactly what to select for different functions.
+
+Simon Service Assignment:
+- Need to use .gitignore file when working with node to make sure the large node_modules directory doesn't get uploaded by git.
+- npm init -y
+- npm install express
+- using an index.js file will be an entry point that node.js will call when we use our web service.
+
+Simon DB Assignment:
+- Not good practice to store full connection urls within the actual code, better to make as environment variables or some other way to hide the actual credentials.
+- MongoDB is really good at working with JavaScript because of the way its document-based database structure is set up (same as JS objects).
+- npm install mongodb
+- const {MongoClient} = require('mongodb');
+
+Simon Login Assignment:
+- Use a mix of node and mongodb to create api service endpoints.
+- These service endpoints utilize http syntax.
+- User authentication uses the api calls to validate login information against the database, then stores a token in a cookie so the user has more ease of access.
+
+Simon WebSocket Assignment:
+- WebSocket is a way to connect two clients together to consistently share data instead of waiting on server replies
+- const { WebSocketServer } = require('ws');
+- const wss = new WebSocketServer({ noServer: true });
+
+Simon React Assignment:
+- React uses components
+- React components use state, props, and render, to update components when data changes
+- npx create-react-app "project_name" to initialize a simple base react foundation
+- "npm start" while in the project directory to run the program
+- npm run build
+  - Builds a deployable version of your react project (saves it to a "build" directory)
+- React Router
+  - Contains routes/links to other "pages"
+  - These pages aren't separate html files, rather they are react components modifying the root DOM
+
 
 Other Notes:
 - JSON uses double quotes
@@ -99,5 +149,6 @@ Other Notes:
 ![image](https://user-images.githubusercontent.com/90023992/224163440-894bb48a-eba5-4e87-ab97-c55f6724fe8d.png)
 ![image](https://user-images.githubusercontent.com/90023992/224166416-c980162b-5873-4ff6-9e78-a8efabf06023.png)
 ![image](https://user-images.githubusercontent.com/90023992/225480008-78f26ed3-c42e-44a6-91f9-40651a2e99ab.png)
+![image](https://user-images.githubusercontent.com/90023992/227111087-d8c9177c-9584-4344-9b7a-9394796f3efb.png)
 
 
