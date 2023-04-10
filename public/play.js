@@ -1,5 +1,5 @@
 
-import { Chess } from './node_modules/chess.js/dist/chess.js';
+import { Chess } from '../services/node_modules/chess.js/dist/chess.js';
 
 const playerNameEl = document.querySelector('.player-name');
 playerNameEl.textContent = localStorage.getItem('userName') ?? 'Mystery Player';
