@@ -10,7 +10,12 @@
 
     if (authenticated) {
         document.querySelector('#playerName').textContent = username;
-    }
+        setDisplay('loginControls', 'none');
+        setDisplay('playControls', 'block');
+      } else {
+        setDisplay('loginControls', 'block');
+        setDisplay('playControls', 'none');
+      }
 })();
 
 async function loginUser() {
@@ -18,7 +23,7 @@ async function loginUser() {
 }
 
 async function createUser() {
-    loginOrCreate(`/api/auth/create`);
+    loginOrCreate(`/api/auth/register`);
 }
 
 async function loginOrCreate(endpoint) {
@@ -34,7 +39,7 @@ async function loginOrCreate(endpoint) {
     const body = await response.json();
 
     if (response?.status === 200) {
-        localStorage.setItem('username', usrename);
+        localStorage.setItem('username', username);
         window.location.href = 'play.html';
     }
     else {
@@ -60,7 +65,12 @@ async function getUser(username) {
     if (response.status === 200) {
         return response.json();
     }
-    else {
-        return null;
-    }
+    return null;
 }
+
+function setDisplay(controlId, display) {
+    const playControlEl = document.querySelector(`#${controlId}`);
+    if (playControlEl) {
+      playControlEl.style.display = display;
+    }
+  }

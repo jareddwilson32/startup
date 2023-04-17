@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Serve up the applications static content
-app.use(express.static('public'));
+app.use(express.static('./public/'));
 
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
@@ -53,6 +53,12 @@ apiRouter.post('/auth/login', async (req, res) => {
     res.status(401).send({ msg: 'Unauthorized' });
 });
 
+// DeleteAuth token if stored in cookie
+apiRouter.delete('/auth/logout', (_req, res) => {
+  res.clearCookie(authCookieName);
+  res.status(204).end();
+});
+
 // GetUser
 apiRouter.get('/user/:username', async (req, res) => {
     const user = await DB.getUser(req.params.username);
@@ -77,6 +83,16 @@ secureApiRouter.use(async (req, res, next) => {
   else {
     res.status(401).send({ msg: 'Unauthorized' });
   }
+});
+
+// Default error handler
+app.use(function (err, req, res, next) {
+  res.status(500).send({ type: err.name, message: err.message });
+});
+
+// Return the application's default page if the path is unknown
+app.use((_req, res) => {
+  res.sendFile('index.html', { root: 'public' });
 });
 
 // setAuthCookie in the HTTP response

@@ -13,7 +13,7 @@ if (!userName) {
 const url = `mongodb+srv://${userName}:${password}@${hostname}`;
 
 const client = new MongoClient(url);
-// TODO: configure accurate mongo credentials and collections/db, etc.
+// TODO: configure accurate collections/db, etc.
 const userCollection = client.db('startup').collection('user');
 
 function getUser(username) {

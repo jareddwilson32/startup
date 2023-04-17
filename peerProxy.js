@@ -14,7 +14,7 @@ class PeerProxy {
 
         let connections = [];
 
-        wss.on('connectoin', (ws) => {
+        wss.on('connection', (ws) => {
             const connection = { id: uuid.v4(), alive: true, ws: ws };
             connections.push(connection);
 
