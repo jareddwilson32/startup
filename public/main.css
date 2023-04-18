@@ -90,19 +90,6 @@ menu {
     margin: 8px 
   }
   
-  .game {
-    background: rgb(0, 0, 0);
-    border-radius: 50%;
-    box-shadow: 0 0 20px 5px rgb(69, 69, 69);
-    width: 80vw;
-    height: 80vw;
-    position: absolute;
-    min-width: 350px;
-    min-height: 350px;
-    max-width: min(80vmin, 1000px);
-    max-height: min(80vmin, 1000px);
-  }
-  
   .controls {
     position: absolute;
     border-radius: 50%;

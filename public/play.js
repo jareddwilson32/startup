@@ -132,3 +132,65 @@ var config = {
 var board = Chessboard('board', config);
 
 updateStatus();
+/* need to review websocket stuff
+// Functionality for peer to peer communication with WebSockets
+function configureWebSocket() {
+    const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
+    var socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
+    socket.onopen = (event) => {
+        displayMsg('system', 'game', 'connected');
+    };
+    socket.onclose = (event) => {
+        displayMsg('system', 'game', 'disconnected');
+    };    
+    socket.onmessage = async(event) => {
+        const text = await event.data.text();
+        const chat = JSON.parse(text);
+        appendMsg('friend', chat.name, chat.msg);
+      };
+}
+
+function displayMsg(cls, from, msg) {
+    const chatText = document.querySelector('#player-messages');
+    chatText.innerHTML =
+        `<div class="event"><span class="${cls}-event">${from}</span> ${msg}</div>` + chatText.innerHTML;
+}
+
+function broadcastEvent(from, type, value) {
+    const event = {
+        from: from,
+        type: type,
+        value: value,
+    };
+    socket.send(JSON.stringify(event));
+}
+
+configureWebSocket();
+
+function sendMessage() {
+    const msgEl = document.querySelector('#new-msg');
+    const msg = msgEl.value;
+    if (!!msg) {
+        appendMsg('me', 'me', msg);
+        const name = document.querySelector('.player-name').value;
+        socket.send(`{"name":"${name}", "msg":"${msg}"}`);
+        msgEl.value = '';
+    }
+}
+
+// Create one long list of messages
+function appendMsg(cls, from, msg) {
+const chatText = document.querySelector('#chat-text');
+chatText.innerHTML =
+    `<div><span class="${cls}">${from}</span>: ${msg}</div>` +
+    chatText.innerHTML;
+}
+
+// Send message on enter keystroke
+const input = document.querySelector('#new-msg');
+input.addEventListener('keydown', (e) => {
+if (e.key === 'Enter') {
+    sendMessage();
+}
+});
+*/
