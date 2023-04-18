@@ -32,8 +32,19 @@ Startup CSS:
 
 Startup JavaScript:
 - There's a big difference between bare JavaScript and using something like node.js.
+- Node.js is used as a backend so that the frontend can call services from it
+- Node is different from a .js file included in the frontend (like in the public folder)
 - Need an entry point for using node.js
 - HTML elements can call JavaScript functions, and can use event listeners to trigger them based on a user's actions.
+
+Startup Services:
+- Using node.js, we can set up api endpoints that our front end can call
+- By having this backend, we can use others' node packages within our application simply by installing them and creating an endpoint to use them
+- Mongodb uses username, password, and a unique cluster id to access a cluster. We shouldn't keep this information within the application itself, as the data will be public information at that point. Instead, store it in a more secret environment variable.
+- Mongodb doesn't use the same structure as SQL, instead the collections it stores are kept basically as JSON objects, which translates really well when working a lot with JavaScript as they are similar to JavaScript objects as well.
+- Web Sockets are upgraded http connections that allows a more constant flow of data. Useful when clients need to communicate frequently and with more precision.
+- When an application starts with node, it will look for an entry point, usually called index.js or main.js. This file is important for setting up api endpoints and providing a path to the rest of the application.
+- We are using Express through our node.js index.js file to statically serve our front-end pages.
 
 Simon HTML Assignment:
 - Organize file with Head and Body tags, organize Body section into a Header, Main, and Footer.
