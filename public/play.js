@@ -132,7 +132,7 @@ var config = {
 var board = Chessboard('board', config);
 
 updateStatus();
-/* need to review websocket stuff
+
 // Functionality for peer to peer communication with WebSockets
 function configureWebSocket() {
     const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
@@ -166,6 +166,8 @@ function broadcastEvent(from, type, value) {
 }
 
 configureWebSocket();
+
+/* need to review websocket stuff
 
 function sendMessage() {
     const msgEl = document.querySelector('#new-msg');
